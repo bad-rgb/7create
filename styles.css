@@ -1,0 +1,260 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: #f1f5f9;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card {
+    background: #1e293b;
+    margin: 0.7rem auto;
+    padding: 0.7rem 0.7rem;
+    border-radius: 10px;
+    max-width: 370px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.card a {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0.4rem;
+    text-align: left;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.online {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.wa-btn,
+.download-btn,
+.donasi-btn,
+.discord-btn {
+    display: inline-block;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 
+        background 0.2s,
+        color 0.2s,
+        transform 0.15s,
+        box-shadow 0.15s;
+    /* warna dan padding tetap seperti sebelumnya */
+}
+
+.wa-btn {
+    background: linear-gradient(90deg, #25d366 60%, #128c7e 100%);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(37,211,102,0.15);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+    border: none;
+}
+.wa-btn:hover, .wa-btn:active {
+    background: linear-gradient(90deg, #128c7e 60%, #25d366 100%);
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(37,211,102,0.25);
+    filter: brightness(1.08);
+    cursor: pointer;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background: #0ea5e9;
+}
+
+.donasi-btn {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.donasi-btn:hover {
+    background: #f59e42;
+    color: #fff;
+}
+
+.discord-btn {
+    display: inline-block;
+    background: #5865F2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.discord-btn:hover {
+    background: #404eed;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-header, .card {
+    animation: fadeUp 0.8s ease;
+}
+
+.card {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+.card:nth-child(4) { animation-delay: 0.5s; }
+.card:nth-child(5) { animation-delay: 0.6s; }
+.card:nth-child(6) { animation-delay: 0.7s; }
+.card:nth-child(7) { animation-delay: 0.8s; }
+.card:nth-child(8) { animation-delay: 0.9s; }
+
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+    }
+    .card {
+        max-width: 98vw;
+        padding: 0.5rem 0.3rem;
+        margin: 0.5rem auto;
+    }
+ } *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: grid;
+    /* Ganti justify-content dan align-items dengan ini: */
+    place-items: center; /* Ini akan menengahkan konten secara horizontal dan vertikal */
+    
+    padding: 15px 30px;
+    background-color: #5c748d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Sesuaikan tinggi logo */
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4d484;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}
